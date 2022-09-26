@@ -46,18 +46,24 @@ body{
 header{
     height: 70px;
     justify-content: center;
+    opacity: 0;
+    animation: spawn 1s 0s forwards;
 }
 
 h1{
     font-size: 130px;
     font-family: 'Fascinate Inline', cursive;
     text-align: center;
+    opacity: 0;
+    animation: spawn 1s 0s forwards;
 }
 
 h2{ 
     font-size: 50px;
     font-family: 'Krona One', sans-serif;
     text-align: center;
+    opacity: 0;
+    animation: spawn 1s 1s forwards;
 }
 
 a{
@@ -79,7 +85,9 @@ button{
     height: 50px;
     color: rgba(255, 255, 255, 0.500);
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 200px;
+    opacity: 0;
+    animation: spawn 1s 3s forwards;
 }
 
 span{
@@ -89,6 +97,13 @@ span{
 p{
     font-size: 20px;
     text-align: center;
+    opacity: 0;
+    animation: spawn 1s 2s forwards;
+}
+
+.second{
+    opacity: 0;
+    animation: spawn 1s 2s forwards;
 }
 
 address{
@@ -119,6 +134,26 @@ section{
     text-decoration: none;
 }
 
+.Loader{
+    animation: Loader 2s 0s infinite;
+}
+
+.Loader-Container{
+    width: 100%;
+    justify-content: center;
+}
+
+@keyframes spawn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes Loader {
+    0% {filter: grayscale(100%);}
+    50% {filter: grayscale(0%);}
+    100% {filter: grayscale(100%);}
+}
+
 @media (max-width: 1300px){
     h1{
         font-size: 100px;
@@ -145,6 +180,10 @@ section{
     p{
         font-size: 16px;
     }
+
+    button{
+        margin-top: 150px;
+    }
 }
 
 @media (max-width: 800px){
@@ -166,6 +205,10 @@ section{
         align-self: flex-start;
     }
 
+    button{
+        margin-top: 100px;
+    }
+
 }
 
 @media (max-width: 500px){
@@ -173,6 +216,10 @@ section{
     .Card{
         width: 350px;
         height: 200px;
+    }
+
+    button{
+        margin-top: 50px;
     }
 
 }

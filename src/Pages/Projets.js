@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 import H2 from "../Components/H2";
 import Button from "../Components/Button";
+import Loader from "../Components/Loader";
 
 const Projets = () =>{
 
@@ -34,9 +35,9 @@ const Projets = () =>{
         <>
             <H2>Projets</H2>
             <section className="flex scroll g-20">
-                {projets.map((projet)=>{
+                {projets.length>0 ? projets.map((projet)=>{
                     return (
-                        <a href={projet.link} className="nodecoration">
+                        <a href={projet.link} className="nodecoration second">
                             <article className="Card" key={projet.title} style={{
                                 "background" : `url(${projet.url}) no-repeat top/contain`
                             }}>
@@ -50,7 +51,7 @@ const Projets = () =>{
                             </article>
                         </a>
                     )
-                })}
+                }) : <Loader/>}
             </section>
             <div className="flex jcsa">
                 <Button text="About" handleClick={handleAboutclick}/>

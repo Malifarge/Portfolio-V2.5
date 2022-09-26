@@ -25,7 +25,7 @@ const Contacts = () =>{
         <>
             <H2>Contacts</H2>
             <address className="flex clmn g-50">
-                <div className="flex jcsb clmntel">
+                <div className="flex jcsb clmntel second">
         
                     <div className="flex center g-20">
                         <img src={home} alt="home"/>
@@ -39,12 +39,12 @@ const Contacts = () =>{
 
                 </div>
 
-                <div className="asc flex center g-20">
+                <div className="asc flex center g-20 second" >
                         <img src={mail} alt="mail"/>
                         <a href="mailto:malifarge.thomas9@gmail.com">malifarge.thomas9@gmail.com</a>
                 </div>
 
-                <div className="flex jcsb clmntel">
+                <div className="flex jcsb clmntel second">
 
                     <div className="flex center g-20">
                         <img src={github} alt="github"/>

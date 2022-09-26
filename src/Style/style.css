@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Krona+One&family=Roboto&display=swap');
+
+body{
+    background: #242121;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 10px;
+}
+
+.flex{
+    display: flex;
+}
+
+.clmn{
+    flex-direction: column;
+}
+
+.center{
+    align-items: center;
+}
+
+.jcsa{
+    justify-content: space-around;
+}
+
+.jcsb{
+    justify-content: space-between;
+}
+
+.asc{
+    align-self: center;
+}
+
+.g-20{
+    gap: 20px;
+}
+
+.g-50{
+    gap: 50px;
+}
+
+.scroll{
+    overflow:scroll;
+}
+
+header{
+    height: 70px;
+    justify-content: center;
+}
+
+h1{
+    font-size: 130px;
+    font-family: 'Fascinate Inline', cursive;
+    text-align: center;
+}
+
+h2{ 
+    font-size: 50px;
+    font-family: 'Krona One', sans-serif;
+    text-align: center;
+}
+
+a{
+    color: rgba(255, 255, 255, 0.500);
+    text-decoration: none;
+}
+
+a:hover, button:hover{ 
+    color: rgba(255, 255, 255, 1);
+    text-decoration: underline 2px #fc7986;
+    cursor: pointer;
+}
+
+button{
+    background: none;
+    border: 2px solid #fc7987;
+    border-radius: 50px;
+    width: 150px;
+    height: 50px;
+    color: rgba(255, 255, 255, 0.500);
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+span{
+    color: #fc7986;
+}
+
+p{
+    font-size: 20px;
+    text-align: center;
+}
+
+address{
+    margin: 0 20%;
+}
+
+section{
+    width: 100%;
+}
+
+.Card{
+    width: 800px;
+    height: 448px;
+    text-align: center;
+}
+
+.textProjet{
+    opacity: 0;
+    height: 100%;
+}
+
+.textProjet:hover{
+    background-color: #2421218f;
+    opacity: 1;
+}
+
+.nodecoration:hover{
+    text-decoration: none;
+}
+
+@media (max-width: 1300px){
+    h1{
+        font-size: 100px;
+    }
+
+    h2{
+        font-size: 45px;
+    }
+
+    address{
+        margin:  0 10px;
+    }
+}
+
+@media (max-width: 1000px){
+    h1{
+        font-size: 70px;
+    }
+
+    h2{
+        font-size: 35px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 800px){
+    
+    .Card{
+        width: 500px;
+        height: 280px;
+    }
+
+}
+
+@media (max-width: 600px){
+    .clmntel{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .asc{
+        align-self: flex-start;
+    }
+
+}
+
+@media (max-width: 500px){
+    
+    .Card{
+        width: 350px;
+        height: 200px;
+    }
+
+}
+
+@media (max-width: 420px){
+    h1{
+        font-size: 50px;
+    }
+
+}

@@ -40,14 +40,14 @@ body{
 }
 
 .scroll{
-    overflow:scroll;
+    overflow-x:scroll;
 }
 
 header{
     height: 70px;
     justify-content: center;
     opacity: 0;
-    animation: spawn 1s 0s forwards;
+    animation: spawn 0.5s 0s forwards;
 }
 
 h1{
@@ -55,7 +55,7 @@ h1{
     font-family: 'Fascinate Inline', cursive;
     text-align: center;
     opacity: 0;
-    animation: spawn 1s 0s forwards;
+    animation: spawn 0.5s 0s forwards;
 }
 
 h2{ 
@@ -63,7 +63,7 @@ h2{
     font-family: 'Krona One', sans-serif;
     text-align: center;
     opacity: 0;
-    animation: spawn 1s 1s forwards;
+    animation: spawn 0.5s 0.5s forwards;
 }
 
 a{
@@ -87,7 +87,7 @@ button{
     font-size: 20px;
     margin-top: 200px;
     opacity: 0;
-    animation: spawn 1s 3s forwards;
+    animation: spawn 0.5s 1.5s forwards;
 }
 
 span{
@@ -98,12 +98,17 @@ p{
     font-size: 20px;
     text-align: center;
     opacity: 0;
-    animation: spawn 1s 2s forwards;
+    animation: spawn 0.5s 1s forwards;
+}
+
+.about p{
+    text-align: start;
+    width: 50%;
 }
 
 .second{
     opacity: 0;
-    animation: spawn 1s 2s forwards;
+    animation: spawn 0.5s 1s forwards;
 }
 
 address{

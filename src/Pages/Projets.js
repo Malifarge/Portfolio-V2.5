@@ -37,7 +37,7 @@ const Projets = () =>{
             <section className="flex scroll g-20">
                 {projets.length>0 ? projets.map((projet)=>{
                     return (
-                        <a href={projet.link} className="nodecoration second">
+                        <a href={projet.link} target="_blank" rel="noopener noreferrer" className="nodecoration second">
                             <article className="Card" key={projet.title} style={{
                                 "background" : `url(${projet.url}) no-repeat top/contain`
                             }}>

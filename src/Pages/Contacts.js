@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom"
 
-import home from "../images/home.png"
 import phone from "../images/phone.png"
 import mail from "../images/mail.png"
 import github from "../images/github.png"
@@ -24,34 +23,27 @@ const Contacts = () =>{
     return(
         <>
             <H2>Contacts</H2>
-            <address className="flex clmn g-50">
-                <div className="flex jcsb clmntel second">
+            <address className="flex clmn center g-50">
 
-                    <div className="flex center g-20">
-                        <img src={phone} alt="phone"/>
-                        <a href="tel:+33766631511">07.66.63.15.11</a>
-                    </div>
-
+                <div className="flex center g-20 w-300 second">
+                    <img src={phone} alt="phone"/>
+                    <a href="tel:+33766631511">07.66.63.15.11</a>
                 </div>
 
-                <div className="asc flex center g-20 second" >
-                        <img src={mail} alt="mail"/>
-                        <a href="mailto:malifarge.thomas9@gmail.com">malifarge.thomas9@gmail.com</a>
+                <div className="flex center g-20 w-300 second" >
+                    <img src={mail} alt="mail"/>
+                    <a href="mailto:malifarge.thomas9@gmail.com">malifarge.thomas9@gmail.com</a>
                 </div>
 
-                <div className="flex jcsb clmntel second">
-
-                    <div className="flex center g-20">
-                        <img src={github} alt="github"/>
-                        <a target="_blank" rel="noreferrer" href="https://github.com/Malifarge">Mon github</a>
-                    </div>
+                <div className="flex center g-20 w-300 second">
+                    <img src={github} alt="github"/>
+                    <a target="_blank" rel="noreferrer" href="https://github.com/Malifarge">Mon github</a>
+                </div>
         
-                    <div className="flex center g-20">
-        
-                        <img src={Linkedin} alt="Linkedin"/>
-                        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/thomas-malifarge-477868241/"> Mon compte Linkedin</a>
-                    </div>
-
+                <div className="flex center g-20 w-300 second">
+    
+                    <img src={Linkedin} alt="Linkedin"/>
+                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/thomas-malifarge-477868241/"> Mon compte Linkedin</a>
                 </div>
 
             </address>

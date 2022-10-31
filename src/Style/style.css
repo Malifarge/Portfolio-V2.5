@@ -39,6 +39,10 @@ body{
     gap: 50px;
 }
 
+.w-300{
+    width: 300px;
+}
+
 .scroll{
     overflow-x:scroll;
 }

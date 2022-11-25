@@ -95,6 +95,14 @@ button{
 }
 
 span{
+    color: white;
+}
+
+span:hover{
+    color: #fc7986;
+}
+
+.red{
     color: #fc7986;
 }
 

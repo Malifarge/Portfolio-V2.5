@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import H2 from "../Components/H2";
 import Button from "../Components/Button";
 import Loader from "../Components/Loader";
+import AnimText from "../Components/AnimText";
 
 const Projets = () =>{
 
@@ -15,9 +16,7 @@ const Projets = () =>{
 
     const fetchProjets = async() =>{
         const response = await fetch("https://portfolio-malifarge-v3.herokuapp.com/projects")
-        console.log(response);
         const data = await response.json()
-        console.log(data);
         setProjets(data)
     }
 
@@ -33,12 +32,12 @@ const Projets = () =>{
 
     return(
         <>
-            <H2>Projets</H2>
+            <H2><AnimText word1="Projets"/></H2>
             <section className="flex scroll g-20">
                 {projets.length>0 ? projets.map((projet)=>{
                     return (
-                        <a href={projet.link} target="_blank" rel="noopener noreferrer" className="nodecoration second">
-                            <article className="Card" key={projet.title} style={{
+                        <a href={projet.link} target="_blank" rel="noopener noreferrer" className="nodecoration second" key={projet.title} >
+                            <article className="Card" style={{
                                 "background" : `url(${projet.url}) no-repeat top/contain`
                             }}>
                                 <div className="textProjet flex clmn jcsa">

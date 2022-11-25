@@ -7,6 +7,7 @@ import Linkedin from "../images/Linkedin.png"
 
 import H2 from "../Components/H2"
 import Button from "../Components/Button"
+import AnimText from "../Components/AnimText"
 
 const Contacts = () =>{
 
@@ -22,7 +23,7 @@ const Contacts = () =>{
 
     return(
         <>
-            <H2>Contacts</H2>
+            <H2><AnimText word1="Contacts"/></H2>
             <address className="flex clmn center g-50">
 
                 <div className="flex center g-20 w-300 second">

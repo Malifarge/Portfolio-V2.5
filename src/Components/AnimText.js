@@ -2,26 +2,18 @@
 
 import { useEffect, useState } from "react"
 
-const AnimText = ({word1, word2})=>{
-    const [letters1,setLetters1] = useState([])
-    const [letters2,setLetters2] = useState([])
+const AnimText = ({text})=>{
+    const [letters,setLetters] = useState([])
 
     useEffect(()=>{
-        setLetters1(word1.split(""))
-        if(word2){
-            setLetters2(word2.split(""))
-        }
+        setLetters(text.split(""))
     },[])
 
     return(
         <>
-        {letters1.map((letter1,index)=>{
-            return <span key={index}>{letter1}</span>
+        {letters.map((letter,index)=>{
+            return <span key={index}>{letter}</span>
 
-        })}
-        <span> </span>
-        {letters2.map((letter2,index)=>{
-            return (<span key={index}>{letter2}</span>)
         })}
         </>
     )

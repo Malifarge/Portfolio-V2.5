@@ -32,7 +32,7 @@ const Projets = () =>{
 
     return(
         <>
-            <H2><AnimText word1="Projets"/></H2>
+            <H2><AnimText text="Projets"/></H2>
             <section className="flex scroll g-20">
                 {projets.length>0 ? projets.map((projet)=>{
                     return (

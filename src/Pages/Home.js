@@ -20,7 +20,7 @@ const Home = () =>{
 
     return(
         <>
-            <H1><AnimText word1="Thomas" word2="Malifarge"/></H1>
+            <H1><AnimText text="Thomas Malifarge"/></H1>
             <H2>Développeur Fullstack Junior</H2>
             <p>Actuellement à la recherche d'un contrat d'apprentissage de 12 mois avec un rythme d'une semaine en formation et 3 en entreprise</p>
             <div className="flex jcsa">

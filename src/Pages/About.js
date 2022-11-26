@@ -18,7 +18,7 @@ const About = () =>{
 
     return(
         <>
-            <H2><AnimText word1="About"/></H2>
+            <H2><AnimText text="About"/></H2>
             <div className="about flex clmn center">
                 <p> Étant autonome , j’ai tout de même beaucoup de plaisir à travailler en groupe notamment  pour l’entre-aide possible qui permet d’avancer les projets plus efficacement. </p>
                 <p> Créatif , j’écris depuis tout jeune que ce soit  des histoires ou de la poésie et je m’intéresse à beaucoup de forme d’art pour m’inspiré moi même dans mes projets. Les crations sur internet m’ont beaucoup inspiré dans mes objectifs, particulièrement les créations vidéo et streaming me menant à moi même travailler sur l’ordinateur.</p>

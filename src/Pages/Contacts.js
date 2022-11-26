@@ -23,7 +23,7 @@ const Contacts = () =>{
 
     return(
         <>
-            <H2><AnimText word1="Contacts"/></H2>
+            <H2><AnimText text="Contacts"/></H2>
             <address className="flex clmn center g-50">
 
                 <div className="flex center g-20 w-300 second">

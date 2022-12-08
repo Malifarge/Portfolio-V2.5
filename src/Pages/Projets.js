@@ -15,7 +15,7 @@ const Projets = () =>{
     },[])
 
     const fetchProjets = async() =>{
-        const response = await fetch("https://portfolio-malifarge-v3.herokuapp.com/projects")
+        const response = await fetch("https://long-gray-puppy-kilt.cyclic.app/projects")
         const data = await response.json()
         setProjets(data)
     }
